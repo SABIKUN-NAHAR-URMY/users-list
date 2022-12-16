@@ -43,12 +43,12 @@ const Home = () => {
                 {
                     idData ?
                         <div className='mb-10'>
-                            <div className="avatar px-24">
+                            <div className="avatar px-28">
                                 <div className="w-24 rounded-full ring ring-slate-300 ring-offset-base-100 ring-offset-2">
                                     <img src={dummy} alt="" />
                                 </div>
                             </div>
-                            <p className='px-20 mb-8'>@{idData.profile.username}</p>
+                            <p className='text-center mb-8'>@{idData.profile.username}</p>
                             <h1 className='border rounded-lg bg-slate-300 p-2 mb-4'>{idData.Bio}</h1>
                             <h2>Full Name</h2>
                             <h1 className='mb-4 border rounded-lg bg-slate-300 p-2'>{idData.profile.firstName + ' ' + idData.profile.lastName}</h1>
