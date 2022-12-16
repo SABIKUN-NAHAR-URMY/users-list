@@ -10,7 +10,7 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/users')
+        axios.get('https://users-list-server.vercel.app')
             .then(data => {
                 setLoading(false);
                 setUsers(data.data);
