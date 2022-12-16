@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../Home/Home";
 import Main from "../Main/Main";
-import UsersList from "../UsersList/UsersList";
 
 export const router = createBrowserRouter([
     {
@@ -14,7 +13,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/users/:id',
-                element: <UsersList></UsersList>,
+                element: <Home></Home>,
                 loader: ({params}) => fetch(`http://localhost:5000/users/${params.id}`)
             }
         ]
